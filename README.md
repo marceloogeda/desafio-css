@@ -1,2 +1,4 @@
-desafio-css
+# Desafio CSS
 ===========
+
+Propostas enviadas ao desafio.
