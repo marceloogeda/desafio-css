@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Desafio CSS – Especial Cone | Marcelo Ogeda</title>
+        <style type="text/css">
+            .cone {
+                background-color: #e7a535;
+                width: 147px;
+                height: 147px;
+                border-radius: 10px;
+                position: relative;
+                box-shadow: 2px 2px 0 1px #b0762c;
+                margin: 150px 0 0 150px;
+                -webkit-transform: rotate(45deg);
+                   -moz-transform: rotate(45deg);
+                        transform: rotate(45deg);
+            }
+
+            .cone:before, 
+            .cone:after {
+                content: "";
+                display: block;
+            }
+
+            .cone:before {
+                border-style: solid;
+                border-width: 75px;
+                border-color: transparent transparent #f7b137;
+                position: absolute;
+                left: -111px;
+                top: -110px;
+                border-radius: 0 10px 10px;
+                -webkit-transform: rotate(-45deg) scaleY(2.2);
+                   -moz-transform: rotate(-45deg) scaleY(2.2);
+                        transform: rotate(-45deg) scaleY(2.2);
+            }
+
+            .cone:after {
+                background-color: #f7b137;
+                position: absolute;
+                left: 46px;
+                top: 47px;
+                width: 65px;
+                height: 65px;
+                border-radius: 50%;
+                -webkit-transform: rotate(45deg) scaleY(2.2);
+                   -moz-transform: rotate(45deg) scaleY(2.2);
+                        transform: rotate(45deg) scaleY(2.2);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="cone"></div>
+    </body>
+</html>
