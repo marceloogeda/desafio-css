@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <title>Desafio</title>
+
+        <style rel="stylesheet">
+            div {
+                background: blue;
+                border-radius: 50%;
+                left: 100px;
+                height: 200px;
+                position: absolute;
+                top: 100px;
+                width: 200px;
+            }
+            div>div {
+                background: red;
+                left:-20px;
+                height: 240px;
+                opacity:0.85;
+                position: absolute;
+                top:-20px;
+                width: 240px;
+                z-index: -1;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <div></div>
+        </div>
+    </body>
+</html>
